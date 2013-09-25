@@ -24,9 +24,11 @@ public class Guess_lab2 {
 	//	System.out.println(computerNum);
 		
 			  
-		if (computerNum < num)
+		if (computerNum == num)
 		{	
-			System.out.println("Your guess is too large! Try again!");
+			System.out.println("You got it! Good guess!");
+			result =1;
+			return;
 		}
 	  
 		if (computerNum > num)
@@ -34,10 +36,11 @@ public class Guess_lab2 {
 			System.out.println("Your guess is too small! Try again!");
 		}
 		
-		else
+		else 
 		{	
-			System.out.println("You got it! Good guess!");
-			result =1;
+			System.out.println("Your guess is too big! Try again!");
+			
+			
 		}
 		}
 	  }
